@@ -1,0 +1,29 @@
+h1{
+    color: #333;
+}
+
+p{ 
+    color: #333;    
+}
+
+body{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 2.0em;
+
+}
+
+.container {
+    width:80%;
+    margin: auto;
+    border: 3px black solid;
+    padding: 10px;
+    background-color: red;
+}
+
+.box-1 {
+    background-color:#333;
+    color:#fff;
+    border: #333
+}
