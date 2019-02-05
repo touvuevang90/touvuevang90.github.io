@@ -1,29 +1,114 @@
 h1{
-    color: #333;
+    color: #000;
 }
 
-p{ 
-    color: #333;    
+html, body, header, main, section, article, footer, div, a, ul, li, h1, h2, h3, p {
+    /* simple reset - resets browser's default styling */
+    padding: 5px;
+    margin: 4px;
+    box-sizing: border-box;
+
 }
 
 body{
-    font-family: 'Satisfy', cursive;
-    font-size: 35px;
-    font-weight: normal;
-    line-height: 2.0em;
-
+    background-color:#f4f4f4;
+    color:555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height:1.6em;
+    margin:0;
 }
 
-.container {
+
+.hightlightme{
+    background-color: fff00;}
+    p{background-color:rgb(9, 59, 134);
+    color: #fff;
+    
+}
+
+
+.container{
     width:80%;
-    margin: auto;
-    border: 3px black solid;
-    padding: 10px;
-    background-color: red;
+    margin:auto;
+    overflow:hidden;
 }
 
-.box-1 {
-    background-color:#333;
+#main-header{
+    background-color:rgb(255, 255, 255);
     color:#fff;
-    border: #333
 }
+
+#navbar{
+    background-color:rgb(9, 59, 134);
+    color:#fff;
+}
+
+#navbar ul{
+    padding:0;
+    list-style:none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font: size 20px;
+    padding-right:15px;
+}
+
+#showcase{
+    background-image: url('../img/tshirts.jpg');
+    background-position:center right;
+    height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top:30px;
+}
+
+#main{
+    float:left;
+    color:white;
+    width: 70%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    background:#333;
+    color:#fff;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#main-footer{
+    background:rgb(9, 59, 134);
+    color:#fff;
+    text-align: center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    #main{
+        width:100%;
+        float:none;
+    }
+
+    sidebar{
+        width:100%;
+        float:none;
+    }
+}
+
