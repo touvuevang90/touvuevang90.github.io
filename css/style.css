@@ -1,6 +1,14 @@
 h1{
-    color: #000;
+    color: rgb(0, 0, 0)
 }
+
+
+a {
+    /* remove underline on hyperlinks */
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
 
 html, body, header, main, section, article, footer, div, a, ul, li, h1, h2, h3, p {
     /* simple reset - resets browser's default styling */
@@ -11,9 +19,9 @@ html, body, header, main, section, article, footer, div, a, ul, li, h1, h2, h3, 
 }
 
 body{
-    background-color:#f4f4f4;
+    background-color:#cf0000;
     color:555;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tahoma, Helvetica, sans-serif;
     font-size: 16px;
     line-height:1.6em;
     margin:0;
@@ -32,6 +40,7 @@ body{
     width:80%;
     margin:auto;
     overflow:hidden;
+    
 }
 
 #main-header{
@@ -111,4 +120,3 @@ body{
         float:none;
     }
 }
-
