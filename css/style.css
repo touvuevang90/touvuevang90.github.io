@@ -2425,17 +2425,202 @@ ol {
 ---------------------*/
 
 element.style {
-	background-image: url(img/cover-img-1.jpg)
+	background-image: url(images/cover-img-1.jpg);
 }
-
-.breadcrumbs-img, .feature-img, .prod-img, .user-img, .product-img, .blog-img, .colorlib-video {
+style.css:8256
+.breadcrumbs-img, .featured-img, .prod-img, .user-img, .product-img, .blog-img, .colorlib-video {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
 }
-
+@media (max-width: 767.98px)
+style.css:7653
+.breadcrumbs-img {
+	padding: 2em;
+}
+style.css:7649
 .breadcrumbs-img {
 	height: 300px;
 	padding: 4em;
 }
+style.css:39
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+bootstrap.min.css:6
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+user agent stylesheet
+div {
+	display: block;
+}
+Inherited from 
+body
+style.css:7285
+body {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #595959;
+	background: #fff;
+}
+style.css:57
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+}
+bootstrap.min.css:6
+body {
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+}
+Inherited from 
+html
+style.css:7
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+bootstrap.min.css:6
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+style.css:43
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+}
+bootstrap.min.css:6
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+}
+Pseudo ::before element
+style.css:39
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+bootstrap.min.css:6
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+Pseudo ::after element
+style.css:39
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+bootstrap.min.css:6
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+Pseudo ::selection element
+style.css:7351
+::selection {
+	color: #fff;
+	background: #616161;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
