@@ -2483,11 +2483,6 @@ element.style {
     margin: 20px 0 0 -12px;
 }
 
-
-
-
-
-
 .colorlib-nav .top-menu {
 	padding: 50px 0 10px 0; }
 	@media (max-width: 767.98px) {
@@ -2820,7 +2815,7 @@ element.style {
 	font-family: "Montserrat", Arial, sans-serif;
 	margin-bottom: 0; }
   
-  .featured {
+	.featured {
 	width: 100%; }
 	.featured .featured-img {
 	  height: 500px;
@@ -2837,3 +2832,11 @@ element.style {
 	  font-size: 40px; }
 	  .featured .desc h2 a {
 		color: #000; }
+
+
+
+.block-27 ul, .block-27 ul li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
