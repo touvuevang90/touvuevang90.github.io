@@ -2419,10 +2419,24 @@ ol {
 	}
 }
 
+/* ----------------
+  shoes sections
+---------------------*/
+
+element.style {
+}
+.colorlib-nav ul {
+    padding: 0;
+    margin: 20px 0 0 -12px;
+}
+
+
+
 
 /* ----------------
   shoes sections
 ---------------------*/
+
 element.style {
 	background-image: url(images/cover-img-1.jpg);
 }
