@@ -7646,6 +7646,11 @@ h1, h2, h3, h4, h5,
       .breadcrumbs .bread span a {
         color: #88c8bc; }
 
+element.style {
+  background-image: url(img/cover-ima-1.jpg);
+}
+
+
 .breadcrumbs-img {
   height: 300px;
   padding: 4em; }
@@ -8840,7 +8845,7 @@ input[type="text"] {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff; }
+  background: url(../img/loader.gif) center no-repeat #fff; }
 
 .js .animate-box {
   opacity: 0; }
