@@ -1,14 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
-<title>Accessories | CCS.com</title>
-<meta name="description" content="Visit CCS.com for a wide selection of Accessories. Free Shipping, Free Returns. No Sales Tax. CCS has outfitted millions since our first push in 1985. " />
-<meta name="keywords" content="Accessories" />
-<meta name="robots" content="INDEX, FOLLOW" />
-<meta name = "viewport" content = "width=1040" />
-<link rel="icon" href="https://cdn.ccs.com/media/favicon/stores/4/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="https://cdn.ccs.com/media/favicon/stores/4/favicon.ico" type="image/x-icon" />
+	<title>Tou's Tees | eCommerce Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content=" Divisima | eCommerce Template">
+	<meta name="keywords" content="divisima, eCommerce, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
 
 <!-- {{{!!!
 {"default_theme":"shopccs","regexp":"a:1:{s:17:\"_1421872415046_46\";a:2:{s:6:\"regexp\";s:47:\"iP(hone|od)|Android.+Mobile|BlackBerry|IEMobile\";s:5:\"value\";s:13:\"mobileshopccs\";}}","theme":"shopccs"}!!!}}} -->
@@ -274,7 +289,7 @@ gts.push(["locale", "en_US"]);
     <div class="nav-wide nav-menu" style="height: 59px">
         <div class="data-wrapper">
             <div class="logo-container">
-                <a href="https://shop.ccs.com/" title="CCS" class="logo"><img src="https://cdn.ccs.com/skin/frontend/enterprise/shopccs/images/ccs-logo-small.1552089488.jpg" alt="CCS" /></a>
+                <a href="https://shop.ccs.com/" title="CCS" class="logo"><img src="img/toulogo.JPG" alt="CCS" /></a>
             </div>
             <form id="search_mini_form" action="https://shop.ccs.com/catalogsearch/result/" method="get">
 <div class="form-search">
@@ -564,145 +579,88 @@ text-transform: uppercase;
     font-weight: normal;
     font-style: normal;
 }
-#custom-cuff-popup-info button#open-popup {line-height:46px;}
-.guidlines .guidline_notes {margin-top:0;}
-</style>
-<li class="level0 nav-sale level-top parent">
-    <a class="level-top" href="https://shop.ccs.com/new-arrivals">
-        <span style="width:109px; text-align:center;">New Arrivals</span>
-    </a>
-</li>
-<li class="level0 nav-skate level-top parent over">
-    <a class="level-top over" href="https://shop.ccs.com/skateboards">
-        <span style="width:79px; text-align:center;">Skate</span>
-    </a>
-    <div class="column">
-    <div class="section group">
-        <div class="category-column featured-items col span_3_of_12">
-            <h4>Featured items</h4>
-            <ul>
-                <li><a href="https://shop.ccs.com/custom-skateboard">CCS Customs</a></li>
-                <li><a href="https://shop.ccs.com/skateboards/skateboard-decks/shaped">Shaped Decks</a></li>
-                <li><a href="https://shop.ccs.com/skateboards/bearings/bones">Bones Bearings</a></li>
-            </ul>
-        </div>
-        <div class="col span_9_of_12">
-            <div class="category-column col span_3_of_12">
-                <h4>Skateboards</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/skateboards/complete-skateboards">Completes</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/skateboard-decks">Decks Only</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/old-school-skateboards">Cruisers</a></li>
-                </ul>
-                <h4>Skate Components</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/skateboards/skateboard-wheels">Wheels</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/skateboard-trucks">Trucks</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/bearings">Bearings</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/bushings">Bushings</a></li>
-                </ul>
-            </div>
-            <div class="category-column col span_3_of_12">
-                <h4>Longboards</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/longboards/complete-longboards">Completes</a></li>
-                    <li><a href="https://shop.ccs.com/longboards/decks-only">Decks Only</a></li>
-                    <li><a href="https://shop.ccs.com/longboards/trucks">Trucks</a></li>
-                    <li><a href="https://shop.ccs.com/longboards/wheels">Wheels</a></li>
-                </ul>
-                <h4>Protective</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/skateboards/helmets">Helmets</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/protective-gear">Pads</a></li>
-                </ul>
-            </div>
-            <div class="category-column col span_3_of_12">
-                <h4>Accessories</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/skateboards/grip-tape">Griptape</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/hardware">Hardware</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/risers-shock-pads">Risers & Shock Pads</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/tools">Tools</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/skate-wax">Skate Wax</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/skateboard-stickers">Stickers</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/bearing-lube">Bearings & Lube Cleaner</a></li>
-                </ul>
-                <h4><a href="/skateboard-buyers-guide" style="text-decoration:none;">Buyer's Guide</a></h4>
-            </div>
-            <div class="category-column col span_3_of_12">
-                <h4>Featured Brands</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/skateboards/welcome">Welcome</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/oj-wheels">OJ</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/dgk">DGK</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/cortina">Cortina</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/chocolate">Chocolate</a></li>
-                    <li><a href="https://shop.ccs.com/skateboards/thunder">Thunder</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-</li>
-<li class="level0 nav-snow level-top parent">
-    <a class="level-top" href="https://shop.ccs.com/snowboards">
-        <span style="width:86px; text-align:center;">Snow</span>
-    </a>
-    <div class="column">
-    <div class="section group">
-        <div class="category-column featured-items col span_3_of_12">
-            <h4>Featured items</h4>
-            <ul>
-                <li><a href="https://shop.ccs.com/snowboards/never-summer">Never Summer Snowboards</a></li>
-                <li><a href="https://shop.ccs.com/snowboards/womens">Women's Gear</a></li>
-                <li><a href="https://shop.ccs.com/snowboards/bindings">Bindings</a></li>
-            </ul>
-        </div>
-        <div class="col span_9_of_12">
-            <div class="category-column col span_3_of_12">
-                <ul>
-	            <li><a href="https://shop.ccs.com/snowboards">Shop All</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/boards">Snowboards</a></li>
-	             <li><a href="https://shop.ccs.com/snowboards/snowboard-boots">Boots</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/bindings">Bindings</a></li>
-	            <li><a href="https://shop.ccs.com/accessories/beanies">Beanies</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/snowboard-gaiters">Gaiters</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/goggles">Goggles</a></li>
-                </ul>
-            </div>
-            <div class="category-column col span_3_of_12">
-                <ul>
-	            <li><a href="https://shop.ccs.com/snowboards/snowboard-jackets">Jackets</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/snowboard-pants">Pants</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/gloves">Gloves & Mitts</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/base-layers">Base Layers</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/snowboard-socks">Socks</a></li>
-                </ul>
-            </div>
-            <div class="category-column col span_3_of_12">
-                <h4>Gear</h4>
-                <ul>
-	            <li><a href="https://shop.ccs.com/snowboards/snowskates">Snowskates</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/snowboard-luggage">Luggage</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/stomp-pads">Stomp Pads</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/tools-locks">Tools & Locks</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/tuning-maintenance">Tuning & Maintenance</a></li>
-	            <li><a href="https://shop.ccs.com/snowboards/snowboard-helmets">Helmets</a></li>
-                </ul>
-            </div>
-            <div class="category-column col span_3_of_12">
-                <h4>Featured Brands</h4>
-                <ul>
-                    <li><a href="https://shop.ccs.com/snowboards/686">686</a></li>
-                    <li><a href="https://shop.ccs.com/snowboards/never-summer">Never Summer</a></li>
-                    <li><a href="https://shop.ccs.com/snowboards/burton">Burton</a></li>
-                    <li><a href="https://shop.ccs.com/snowboards/airblaster">Airblaster</a></li>
-                    <li><a href="https://shop.ccs.com/snowboards/thirtytwo">Thirtytwo</a></li>
-                    <li><a href="https://shop.ccs.com/snowboards/k2">K2</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 text-center text-lg-left">
+						<!-- logo -->
+						<a href="./index.html" class="site-logo">
+							<img src="img/toulogo.JPG" alt="">
+						</a>
+					</div>
+					<div class="col-xl-6 col-lg-5">
+						<form class="header-search-form">
+							<input type="text" placeholder="Search on tou's tees ....">
+							<button><i class="flaticon-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-4 col-lg-5">
+						<div class="user-panel">
+							<div class="up-item">
+								<i class="flaticon-profile"></i>
+								<a href="#">Sign</a> In or <a href="#">Create Account</a>
+							</div>
+							<div class="up-item">
+								<div class="shopping-card">
+									<i class="flaticon-bag"></i>
+									<span>0</span>
+								</div>
+								<a href="#">Shopping Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+					<!-- menu -->
+					<ul class="main-menu">
+							<li><a href="#">New Arrivals</a></li>
+							</a></li>
+							<li><a href="women.html">Women</a>
+								<ul class="sub-menu">
+									<li><a href="./womensclothing.html">Clothing</a></li>
+									<li><a href="./womenaccessories.html">Accessories</a></li>
+									<li><a href="./womenshoes.html">Foot Wear</a></li>
+									<li><a href="./add-to-wishlist.html">Wish List</a></li>
+								</ul>
+							</li>
+							<li><a href="menclothing.html">Men</a>
+								<ul class="sub-menu">
+									<li><a href="./menclothing.html">Clothing</a></li>
+									<li><a href="menaccessories.html">Accessories</a></li>
+									<li><a href="mendeals.html">Deals</a></li>
+									<li><a href="menshoes.html">Shoes</a></li>
+								</ul>
+							</li>
+							<li><a href="shoes.html">Shoes</a>
+								<ul class="sub-menu">
+									<li><a href="#">Sneakers</a></li>
+									<li><a href="#">Sandals</a></li>
+									<li><a href="#">Formal Shoes</a></li>
+									<li><a href="#">Boots</a></li>
+									<li><a href="#">Flip Flops</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pages</a>
+								<ul class="sub-menu">
+									<li><a href="./product.html">Product Page</a></li>
+									<li><a href="./category.html">Category Page</a></li>
+									<li><a href="./cart.html">Cart Page</a></li>
+									<li><a href="./checkout.html">Checkout Page</a></li>
+									<li><a href="./contact.html">Contact Page</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+	<!-- Header section end -->
 </div>
 </li>
 <li class="level0 nav-shoes level-top parent">
@@ -1132,7 +1090,7 @@ window.contentBlockToggle = function () {
 </script>
 
 
-<a href="/brand/crap-eyewear"><img src="https://cdn.ccs.com/media/wysiwyg/crap_banner_2182019.1550535787.jpg" class="category-hero" alt="Skateboard Accessories" /></a>
+<a href=""><img src="img/blog-1.jpg" class="category-hero" alt="Skateboard Accessories" /></a>
 
 
 <div class="content-block" style="padding: 20px 60px 0 60px;">
@@ -3612,45 +3570,8 @@ jQuery(document).ready(function() {
 
 </script>
 
-            <div class="bottom_desc">
-                    </div>
-    <div style="display:none" class="amshopby-overlay"><div></div></div></div>            </div>
-        </div>
-                <div class="footer-bar-nav">
-    <div class="footer-links">
-        <ul>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/customer-service">Customer<br />Service</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/returns">Returns</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/about-ccs">About Us</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/portland-store">Portland<br />Store</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/shipping-policy">Shipping</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/catalog-request">Request<br />a Catalog</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/the_catalog">The<br />Corner</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/blog">Blog<br />Archive</a></li>
-            <li style="text-align:center; width:10%;"><a href="https://shop.ccs.com/privacy-policy">Legal Stuff</a></li>
-            <!--<li style="text-align:center; width:11%;"><a href="https://shop.ccs.com/sitemap/sitemap_ccs.xml">Sitemap</a></li>-->
-            <li>
-                <ol style="background-image: url('https://shop.ccs.com/media/wysiwyg/ccs-social-icons-smaller.png'); background-repeat:no-repeat; height: 36px;">
-                    <li><a rel="nofollow" href="https://www.facebook.com/ccs.skate" target="_blank" style="margin:0px; height:36px; width:37px;"></a></li>
-                    <li><a rel="nofollow" href="https://twitter.com/ccs_skate" target="_blank" style="margin:0px; height:36px; width:39px;"></a></li>
-                    <li><a rel="nofollow" href="http://instagram.com/ccs" target="_blank" style="margin:0px; height:36px; width:39px;"></a></li>
-                    <li><a rel="nofollow" href="https://www.youtube.com/user/CCSskatemedia" target="_blank" style="margin:0px; height:36px; width:38px;"></a></li>
-                </ol>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="footer-container">
-    <div class="wrap1000">
-        <div class="footer">
-            <img src="/media/wysiwyg/newsletter-signup.png" />
-<div class="newsletter">
-    <div class="input-group">
-        <input type="text" class="form-control" name="email" placeholder="EMAIL ADDRESS">
-        <span class="input-group-btn"><button class="btn" type="button" onclick="newsletter()">&raquo;</button></span>
-    </div>
-    <span class="response"></span>
-</div>
+          
+
 <script type="text/javascript">
     function newsletter() {
         jQuery.ajax({
@@ -3675,12 +3596,7 @@ jQuery(document).ready(function() {
         });
     }
 </script>
-        </div>
-        <div class="servicelogos" style="height:60px;">
-            <img src="https://cdn.ccs.com/media/wysiwyg/security-logos-ccs.1473870768.jpg" class="img-responsive" alt="Service Logos" />
-            <address>&copy; 2019 CCS. All Rights Reserved</address>
-        </div>
-    </div>
+       
     <div style="display: none;" class="mobile-button">
         <a href="javascript:void(0)" onclick="forceMobile();">Go to Mobile Site</a>
     </div>
