@@ -2855,4 +2855,22 @@ element.style {
 			  background: #616161;
 			  color: #fff;
 			  border: 1px solid transparent; }
-		  
+
+
+
+
+element.style {
+    background-image: url(images/item-6.jpg);
+}
+
+.breadcrumbs-img,
+.featured-img,
+.prod-img,
+.user-img,
+.product-img,
+.blog-img,
+.colorlib-video {
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+position: relative; }
